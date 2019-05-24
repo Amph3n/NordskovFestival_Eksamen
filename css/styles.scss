@@ -45,7 +45,7 @@ $footer: #253574;
 
 .main_grid {
   display: grid;
-  grid-template-rows: 400px 400px auto 400px auto 400px;
+  grid-template-rows: 400px auto auto 400px auto 400px;
 }
 
 .o_tagline {
@@ -136,6 +136,8 @@ nav {
 .o_text1 {
   position: relative;
    background-color: $primar_blue;
+  color: white;
+  font-family: calibri, sans-serif;
 }
 
 .mid_grafik {
@@ -219,13 +221,40 @@ footer {
   border-width: 0px;
 }
 
+.p_margin {
+  margin: 10px 30px;
+
+  .fa {
+    margin-top: 5px;
+  }
+}
+
+.p_overnat_text a {
+  color: white;
+  font-weight: bold;
+}
+
+.p_pris, .p_overnat, .p_mad, .p_trans {
+  justify-content: space-between;
+  display: flex;
+}
+
+.p_pris_text, .p_overnat_text, .p_mad_text, .p_trans_text {
+  display: none;
+  margin-bottom: 50px;
+}
+
+.tg {
+  margin-top: 25px;
+}
+
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
   .main_grid {
     display: grid;
-    grid-template-rows: 600px 600px auto 600px auto 400px;
+    grid-template-rows: 600px auto auto 600px auto 400px;
   }
 
   .hide_menu {
@@ -308,7 +337,7 @@ footer {
 
   .main_grid {
     display: grid;
-    grid-template-rows: 650px 600px auto 600px auto 400px;
+    grid-template-rows: 650px auto auto 600px auto 400px;
   }
 }
 
@@ -317,7 +346,7 @@ footer {
 
   .main_grid {
     display: grid;
-    grid-template-rows: 750px 600px auto 600px auto 400px;
+    grid-template-rows: 750px auto auto 600px auto 400px;
   }
 }
 
