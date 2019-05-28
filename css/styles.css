@@ -29,7 +29,7 @@ img {
 
 .main_grid {
   display: grid;
-  grid-template-rows: 400px auto auto 400px auto 400px; }
+  grid-template-rows: 400px auto auto auto auto 400px; }
 
 .o_tagline {
   position: relative;
@@ -182,10 +182,84 @@ footer {
 .tg {
   margin-top: 25px; }
 
+.p_odsherred, .kfum, .nykobing {
+  height: 150px; }
+
+.p_odsherred {
+  background: url("../images/odsherred.jpg") no-repeat center;
+  background-size: contain; }
+
+.kfum {
+  background: url("../images/kfum.jpg") no-repeat center;
+  background-size: contain; }
+
+.nykobing {
+  background: url("../images/nykobing.jpg") no-repeat center;
+  background-size: contain; }
+
+.p_partner {
+  margin-bottom: 30px; }
+
+.p_partner_pic {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%; }
+
+.m_tag {
+  margin: 0 15%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center; }
+
+.m_pic1, .m_pic2, .m_pic3, .m_pic4, .a_pic1, .a_pic2 {
+  width: 100%;
+  height: 200px; }
+
+.m_pic1 {
+  background: url("../images/mic1920.jpg") no-repeat center;
+  background-size: cover; }
+
+.m_pic2 {
+  background: url("../images/guitar1920.jpg") no-repeat center;
+  background-size: cover; }
+
+.m_pic3 {
+  background: url("../images/guitar1920.jpg") no-repeat center;
+  background-size: cover; }
+
+.m_pic4 {
+  background: url("../images/piano1920.jpg") no-repeat center;
+  background-size: cover; }
+
+.m_text_pic1, .m_text_pic2, .m_text_pic3, .m_text_pic4 {
+  margin: 10px 0; }
+
+.m_artist_text, .o_hvem_text, .o_kontakt_info, .o_find_info {
+  margin: 30px 0; }
+
+.a_flex {
+  display: flex;
+  justify-content: center; }
+
+.a_born {
+  margin-right: 30px; }
+
+.a_voksne {
+  margin-left: 30px; }
+
+.a_pic1 {
+  background: url("../images/kid1920.jpg") no-repeat center;
+  background-size: cover; }
+
+.a_pic2 {
+  background: url("../images/active1920.jpg") no-repeat center;
+  background-size: cover; }
+
 @media screen and (min-width: 768px) {
   .main_grid {
     display: grid;
-    grid-template-rows: 600px auto auto 600px auto 400px; }
+    grid-template-rows: 500px auto auto auto auto 400px; }
 
   .hide_menu {
     display: block; }
@@ -240,14 +314,56 @@ footer {
     color: white; }
 
   .f_follow, .f_some, .f_nyhed {
-    margin: 10px auto; } }
+    margin: 10px auto; }
+
+  .p_margin {
+    margin: 10px 60px; }
+
+  .p_partner_pic {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; }
+
+  .m_tag {
+    margin: 0 20%;
+    top: 40%; }
+
+  .m_text_pic1, .m_text_pic2, .m_text_pic3, .m_text_pic4, .a_text_pic1, .a_text_pic2 {
+    margin: 30px 0;
+    display: flex; }
+
+  .m_text_pic1 {
+    flex-direction: row; }
+
+  .m_text_pic3 {
+    flex-direction: row-reverse; }
+
+  .m_scene_text1 {
+    margin-right: 20px; }
+
+  .m_scene_text3 {
+    margin-left: 20px; }
+
+  .a_born_text1 {
+    margin-right: 20px; }
+
+  .a_voksne_text2 {
+    margin-left: 20px; }
+
+  .a_text_pic1 {
+    flex-direction: row; }
+
+  .a_text_pic2 {
+    flex-direction: row-reverse; } }
 @media screen and (min-width: 1200px) {
   .main_grid {
     display: grid;
-    grid-template-rows: 650px auto auto 600px auto 400px; } }
+    grid-template-rows: 650px auto auto auto auto 400px; }
+
+  .p_margin {
+    margin: 10px 100px; } }
 @media screen and (min-width: 1500px) {
   .main_grid {
     display: grid;
-    grid-template-rows: 750px auto auto 600px auto 400px; } }
+    grid-template-rows: 750px auto auto auto auto 400px; } }
 
 /*# sourceMappingURL=styles.css.map */
