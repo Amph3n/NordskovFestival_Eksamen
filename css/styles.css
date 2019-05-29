@@ -98,14 +98,21 @@ img {
 .o_text1 {
   position: relative;
   background-color: #07488e;
-  color: white;
-  font-family: calibri, sans-serif; }
+  color: white; }
+  .o_text1 h2 {
+    font-family: calibri, sans-serif;
+    letter-spacing: 4px;
+    font-size: 30px; }
 
 .mid_grafik {
   margin: -3px 0; }
 
 .o_text2 {
   background-color: #ffce45; }
+  .o_text2 h2 {
+    font-family: calibri, sans-serif;
+    letter-spacing: 4px;
+    font-size: 30px; }
 
 .foot_grafik {
   margin: -3px 0; }
@@ -179,6 +186,10 @@ footer {
   display: none;
   margin-bottom: 50px; }
 
+.p_pris h2, .p_overnat h2, .p_mad h2, .p_trans h2 {
+  font-size: 18pt;
+  letter-spacing: 0; }
+
 .tg {
   margin-top: 25px; }
 
@@ -205,6 +216,17 @@ footer {
   grid-template-rows: 1fr 1fr 1fr;
   height: 100%; }
 
+.p_cta_pris {
+  margin-top: 25px;
+  width: 40%;
+  height: 60px;
+  background-color: #ffda49;
+  border-color: #ffda45;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: calibri, sans-serif; }
+
 .m_tag {
   margin: 0 15%;
   position: relative;
@@ -212,9 +234,9 @@ footer {
   transform: translateY(-50%);
   text-align: center; }
 
-.m_pic1, .m_pic2, .m_pic3, .m_pic4, .a_pic1, .a_pic2 {
+.m_pic1, .m_pic2, .m_pic3, .m_pic4, .a_pic1, .a_pic2, .a_pic1, .a_pic2 {
   width: 100%;
-  height: 200px; }
+  height: 300px; }
 
 .m_pic1 {
   background: url("../images/mic1920.jpg") no-repeat center;
@@ -232,11 +254,11 @@ footer {
   background: url("../images/piano1920.jpg") no-repeat center;
   background-size: cover; }
 
-.m_text_pic1, .m_text_pic2, .m_text_pic3, .m_text_pic4 {
-  margin: 10px 0; }
+.m_text_pic1, .m_text_pic2, .m_text_pic3, .m_text_pic4, .a_text_pic1, .a_text_pic2 {
+  margin: 25px 0; }
 
 .m_artist_text, .o_hvem_text, .o_kontakt_info, .o_find_info {
-  margin: 30px 0; }
+  margin: 25px 0; }
 
 .a_flex {
   display: flex;
@@ -274,7 +296,8 @@ footer {
     display: flex;
     width: 100%;
     height: auto;
-    background-color: transparent; }
+    background-color: transparent;
+    margin-top: 15px; }
     .menu_container a {
       color: black; }
 
@@ -331,6 +354,10 @@ footer {
     margin: 30px 0;
     display: flex; }
 
+  .m_pic1, .m_pic2, .m_pic3, .m_pic4, .a_pic1, .a_pic2 {
+    width: 200%;
+    height: 250px; }
+
   .m_text_pic1 {
     flex-direction: row; }
 
@@ -353,14 +380,22 @@ footer {
     flex-direction: row; }
 
   .a_text_pic2 {
-    flex-direction: row-reverse; } }
+    flex-direction: row-reverse; }
+
+  .a_pic1, .a_pic2 {
+    width: 350%;
+    height: 350px; } }
 @media screen and (min-width: 1200px) {
   .main_grid {
     display: grid;
     grid-template-rows: 650px auto auto auto auto 400px; }
 
   .p_margin {
-    margin: 10px 100px; } }
+    margin: 10px 100px; }
+
+  .m_pic1, .m_pic2, .m_pic3, .m_pic4 {
+    width: 200%;
+    height: 350px; } }
 @media screen and (min-width: 1500px) {
   .main_grid {
     display: grid;
