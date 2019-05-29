@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/gcc4dpf.css">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Nordstrand Festival Aktiviteter</title>
+    <title>Praktisk Info Nordstrand Festival</title>
 
     <!-- Favicon -->
     <link rel="icon" type="images/png" href="images/tree96x96.png" sizes="96x96" />
@@ -126,7 +126,7 @@
                         <td class="tg-0lax">125 kr.</td>
                     </tr>
                 </table>
-                </p>
+                <button class="p_cta_pris">Køb billet</button>
             </div>
 
             <div class="p_overnat">
@@ -149,7 +149,7 @@
             </div>
 
             <div class="p_mad">
-                <h2>Mad og Drikke</h2>
+                <h2>Mad og drikke</h2>
 
                 <div class="p_mclick">
                     <i class="fa fa-chevron-left fa-2x"></i>
@@ -169,7 +169,7 @@
             </div>
 
             <div class="p_trans">
-                <h2>Transport og Parkering</h2>
+                <h2>Transport og parkering</h2>
                 <div class="p_tclick">
                     <i class="fa fa-chevron-left fa-2x"></i>
                 </div>
@@ -235,7 +235,7 @@
                 </a>
             </div>
             <div class="f_nyhed">
-                <input type="email" placeholder="Din E-mail..." class="f_tilmeld">
+                <input type="email" placeholder="Nyhedsmail" class="f_tilmeld">
                 <button class="f_button"><p>Tilmeld</p></button>
             </div>
         </div>
@@ -276,12 +276,12 @@
 
         var pris = 0;
 
-        $(".p_pclick").click(function () {
+        $(".p_pris").click(function () {
             if (pris == 1) {
                 $(".p_pris_text").stop().slideUp(400);
                 pris = 0;
 
-                $('.p_pclick').animate(
+                $('.p_pclick').stop().animate(
                     { deg: 0 },
                     {
                         duration: 400,
@@ -295,7 +295,7 @@
                 $(".p_pris_text").stop().slideDown(400);
                 pris = 1;
 
-                $('.p_pclick').animate(
+                $('.p_pclick').stop().animate(
                     { deg: -90 },
                     {
                         duration: 400,
@@ -309,12 +309,12 @@
 
         var overnat = 0;
 
-        $(".p_oclick").click(function () {
+        $(".p_overnat").click(function () {
             if (overnat == 1) {
                 $(".p_overnat_text").stop().slideUp(400);
                 overnat = 0;
 
-                $('.p_oclick').animate(
+                $('.p_oclick').stop().animate(
                     { deg: 0 },
                     {
                         duration: 400,
@@ -328,7 +328,7 @@
                 $(".p_overnat_text").stop().slideDown(400);
                 overnat = 1;
 
-                $('.p_oclick').animate(
+                $('.p_oclick').stop().animate(
                     { deg: -90 },
                     {
                         duration: 400,
@@ -343,12 +343,12 @@
 
         var mad = 0;
 
-        $(".p_mclick").click(function () {
+        $(".p_mad").click(function () {
             if (mad == 1) {
                 $(".p_mad_text").stop().slideUp(400);
                 mad = 0;
 
-                $('.p_mclick').animate(
+                $('.p_mclick').stop().animate(
                     { deg: 0 },
                     {
                         duration: 400,
@@ -362,7 +362,7 @@
                 $(".p_mad_text").stop().slideDown(400);
                 mad = 1;
 
-                $('.p_mclick').animate(
+                $('.p_mclick').stop().animate(
                     { deg: -90 },
                     {
                         duration: 400,
@@ -376,12 +376,12 @@
 
         var trans = 0;
 
-        $(".p_tclick").click(function () {
+        $(".p_trans").click(function () {
             if (trans == 1) {
                 $(".p_trans_text").stop().slideUp(400);
                 trans = 0;
 
-                $('.p_tclick').animate(
+                $('.p_tclick').stop().animate(
                     { deg: 0 },
                     {
                         duration: 400,
@@ -395,7 +395,7 @@
                 $(".p_trans_text").stop().slideDown(400);
                 trans = 1;
 
-                $('.p_tclick').animate(
+                $('.p_tclick').stop().animate(
                     { deg: -90 },
                     {
                         duration: 400,

@@ -137,7 +137,11 @@ nav {
   position: relative;
    background-color: $primar_blue;
   color: white;
-  font-family: calibri, sans-serif;
+  h2 {
+    font-family: calibri, sans-serif;
+    letter-spacing: 4px;
+    font-size: 30px;
+  }
 }
 
 .mid_grafik {
@@ -150,6 +154,13 @@ nav {
 
 .o_text2 {
   background-color: $primar_yellow;
+
+  h2 {
+    font-family: calibri, sans-serif;
+    letter-spacing: 4px;
+    font-size: 30px;
+  }
+
 }
 
 .foot_grafik {
@@ -252,6 +263,15 @@ footer {
   margin-bottom: 50px;
 }
 
+.p_pris, .p_overnat, .p_mad, .p_trans {
+
+  h2 {
+    font-size: 18pt;
+    letter-spacing: 0;
+  }
+
+}
+
 .tg {
   margin-top: 25px;
 }
@@ -285,6 +305,18 @@ height: 150px;
   height: 100%;
 }
 
+.p_cta_pris {
+  margin-top: 25px;
+  width: 40%;
+  height: 60px;
+  background-color: #ffda49;
+  border-color: #ffda45;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: calibri, sans-serif;
+}
+
 //Praktisk Info slut -------------------------------------------------------------------
 
 //Musik start -------------------------------------------------------------------
@@ -297,10 +329,9 @@ height: 150px;
   text-align: center;
 }
 
-.m_pic1, .m_pic2, .m_pic3, .m_pic4, .a_pic1, .a_pic2 {
+.m_pic1, .m_pic2, .m_pic3, .m_pic4, .a_pic1, .a_pic2, .a_pic1, .a_pic2 {
   width: 100%;
-  height: 200px;
-
+  height: 300px;
 }
 
 .m_pic1 {
@@ -323,13 +354,15 @@ height: 150px;
   background-size: cover;
 }
 
-.m_text_pic1, .m_text_pic2, .m_text_pic3, .m_text_pic4 {
-  margin: 10px 0;
+.m_text_pic1, .m_text_pic2, .m_text_pic3, .m_text_pic4, .a_text_pic1, .a_text_pic2 {
+  margin: 25px 0;
 }
 
 .m_artist_text, .o_hvem_text, .o_kontakt_info, .o_find_info {
-  margin: 30px 0;
+  margin: 25px 0;
 }
+
+// musik slut -------------------------------------------------
 
 //aktiviteter start --------------------------------------------
 
@@ -385,6 +418,7 @@ height: 150px;
     width: 100%;
     height: auto;
     background-color: transparent;
+    margin-top: 15px;
 
     a {
       color: black;
@@ -464,6 +498,12 @@ height: 150px;
   .m_text_pic1, .m_text_pic2, .m_text_pic3, .m_text_pic4, .a_text_pic1, .a_text_pic2 {
     margin: 30px 0;
     display: flex;
+
+  }
+
+  .m_pic1, .m_pic2, .m_pic3, .m_pic4, .a_pic1, .a_pic2 {
+    width: 200%;
+    height: 250px;
   }
 
   .m_text_pic1 {
@@ -502,6 +542,11 @@ height: 150px;
     flex-direction: row-reverse;
   }
 
+  .a_pic1, .a_pic2 {
+    width: 350%;
+    height: 350px;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -518,6 +563,11 @@ height: 150px;
 
   .p_margin {
     margin: 10px 100px;
+  }
+
+  .m_pic1, .m_pic2, .m_pic3, .m_pic4 {
+    width: 200%;
+    height: 350px;
   }
 }
 
