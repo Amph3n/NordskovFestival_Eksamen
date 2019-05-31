@@ -80,6 +80,10 @@ img {
   background: url("../images/logo1.svg") center no-repeat;
   display: none; }
 
+.i_menu_logo {
+  background: url("../images/logo1.svg") center no-repeat;
+  display: none; }
+
 .menu1, .menu2, .menu3, .menu4 {
   margin: auto; }
 
@@ -116,6 +120,57 @@ img {
 
 .foot_grafik {
   margin: -3px 0; }
+
+.i_gif_box {
+  background: url("../images/skov_placeholder.jpg") no-repeat center;
+  background-size: cover;
+  height: fit-co;
+  width: 100%;
+  position: relative; }
+
+.i_gif {
+  margin: auto;
+  width: 300px;
+  height: 100vh; }
+
+.i_drop_btn {
+  right: 15px;
+  top: 15px;
+  position: absolute; }
+  .i_drop_btn :hover {
+    cursor: pointer; }
+  .i_drop_btn i {
+    color: #ffce45; }
+
+.i_menu_container {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: space-evenly;
+  flex-direction: column;
+  display: flex; }
+  .i_menu_container a {
+    color: white;
+    text-decoration: none;
+    font-family: calibri, sans-serif;
+    font-weight: 400; }
+
+.i_logo {
+  height: 80px;
+  margin: auto; }
+
+.i_center {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: fit-content;
+  width: 100%; }
+
+.count_svg {
+  position: relative;
+  left: -50%;
+  max-height: 180px; }
 
 footer {
   background-color: #253574;
@@ -259,6 +314,59 @@ footer {
 
 .m_artist_text, .o_hvem_text, .o_kontakt_info, .o_find_info {
   margin: 25px 0; }
+  .m_artist_text a, .o_hvem_text a, .o_kontakt_info a, .o_find_info a {
+    color: black; }
+
+.artist1, .artist3, .artist5, .artist7, .artist9 {
+  margin: 5px;
+  background: url("../images/male_musician.jpg") no-repeat center;
+  position: relative; }
+  .artist1 p, .artist3 p, .artist5 p, .artist7 p, .artist9 p {
+    font-family: calibri, sans-serif;
+    letter-spacing: 4px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.artist2, .artist4, .artist6, .artist8 {
+  background: url("../images/female_musician.jpg") no-repeat center;
+  margin: 5px;
+  grid-column: 2;
+  position: relative; }
+  .artist2 p, .artist4 p, .artist6 p, .artist8 p {
+    font-family: calibri, sans-serif;
+    letter-spacing: 4px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.m_artist_pics {
+  display: grid;
+  grid-template-rows: 200px 200px 200px 200px 200px;
+  grid-template-columns: 1fr 1fr; }
+
+.fade1, .fade3, .fade5, .fade7, .fade9 {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../images/male_musician_fade.jpg") no-repeat center; }
+
+.fade2, .fade4, .fade6, .fade8 {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("../images/female_musician_fade.jpg") no-repeat center; }
+
+.art_text1, .art_text2, .art_text3, .art_text4, .art_text5, .art_text6, .art_text7, .art_text8, .art_text9 {
+  display: none; }
 
 .a_flex {
   display: flex;
@@ -301,6 +409,14 @@ footer {
     .menu_container a {
       color: black; }
 
+  .i_menu_container {
+    position: relative;
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 60px; }
+
   .logo {
     display: none; }
 
@@ -315,6 +431,13 @@ footer {
     margin-top: 10px; }
 
   .drop_btn {
+    display: none; }
+
+  .i_logo {
+    height: 80px;
+    margin: auto; }
+
+  .i_drop_btn {
     display: none; }
 
   footer {
@@ -369,6 +492,14 @@ footer {
 
   .m_scene_text3 {
     margin-left: 20px; }
+
+  .m_artist_pics {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr; }
+
+  .artist2, .artist4, .artist6, .artist8 {
+    grid-column: auto; }
 
   .a_born_text1 {
     margin-right: 20px; }

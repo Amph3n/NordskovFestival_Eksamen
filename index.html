@@ -9,12 +9,23 @@
     <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
     <meta charset="utf-8">
 
+    <!-- Font awesome embed code !-->
+    <script src="https://use.fontawesome.com/1823101846.js"></script>
+
+    <!-- Font embed links -->
+    <link rel="stylesheet" href="https://use.typekit.net/gcc4dpf.css">
+
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Nordstrand Festival</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="images/png" href="images/tree96x96.png" sizes="96x96" />
+    <link rel="icon" type="images/png" href="images/tree32x32.png" sizes="32x32" />
+    <link rel="icon" type="images/png" href="images/tree16x16.png" sizes="16x16" />
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
-    <meta name="author" content="Udgiver">
+    <meta name="author" content="Oliver Sommer">
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
@@ -28,11 +39,85 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<main class="i_main_grid">
+
+    <header class="o_tagline">
+        <nav>
+            <div class="nav_space">
+                <div class="hide_menu">
+                    <div class="i_menu_container">
+                        <div class="menu1">
+                            <a href="musik.html"><h3>Musik</h3></a>
+                        </div>
+                        <div class="menu2">
+                            <a href="aktivitet.html"><h3>Aktiviteter</h3></a>
+                        </div>
+
+                        <a href="index.html">
+                            <div class="i_menu_logo"></div>
+                        </a>
+
+                        <div class="menu3">
+                            <a href="praktisk.html"><h3>Praktisk Info</h3></a>
+                        </div>
+                        <div class="menu4">
+                            <a href="om_os.html"><h3>Om Os</h3></a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="i_logo">
+
+                    </div>
+
+
+                <div class="i_drop_btn">
+                    <i class="fa fa-bars fa-3x"></i>
+                </div>
+
+            </div>
+        </nav>
+        <div class="i_gif_box">
+            <img src="images/logo_neg1.svg" class="i_gif">
+            <div class="i_center">
+                <img src="images/count_mountain.svg" class="count_svg">
+            </div>
+        </div>
+    </header>
+</main>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function (e) {
         // Din kode her
+
+        var navOpen = 0;
+
+        $(".i_drop_btn").click(function () {
+            if (navOpen == 1) {
+                $(".hide_menu").stop().slideUp(300);
+                navOpen = 0;
+            }
+            else {
+                $(".hide_menu").stop().slideDown(300);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if (width >= 768) {
+                $(".hide_menu").css( "display", "block");
+            }
+            else {
+                $(".hide_menu").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+
+
     });
 </script>
 </body>
