@@ -124,7 +124,7 @@ img {
 .i_gif_box {
   background: url("../images/skov_placeholder.jpg") no-repeat center;
   background-size: cover;
-  height: fit-co;
+  height: fit-content;
   width: 100%;
   position: relative; }
 
@@ -162,15 +162,24 @@ img {
 
 .i_center {
   position: absolute;
-  left: 50%;
   bottom: 0;
   height: fit-content;
   width: 100%; }
 
 .count_svg {
   position: relative;
-  left: -50%;
-  max-height: 180px; }
+  max-height: 180px;
+  width: 100%; }
+
+#countdown {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  max-height: 180px;
+  font-size: 20px;
+  width: 100%;
+  color: white;
+  word-spacing: 1px; }
 
 footer {
   background-color: #253574;
