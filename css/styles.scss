@@ -188,8 +188,13 @@ nav {
   margin: -3px 0;
 }
 
+.o_text1, .o_text2 {
+  font-size: 12pt;
+}
 
-
+button:hover {
+  cursor: pointer;
+}
 
 // index start -------------------------------------------------
 
@@ -383,6 +388,14 @@ footer {
 .p_pris, .p_overnat, .p_mad, .p_trans {
   justify-content: space-between;
   display: flex;
+}
+
+.p_pris, .p_overnat, .p_mad, .p_trans {
+
+  :hover {
+    cursor: pointer;
+  }
+
 }
 
 .p_pris_text, .p_overnat_text, .p_mad_text, .p_trans_text {

@@ -131,6 +131,12 @@ img {
 .foot_grafik {
   margin: -3px 0; }
 
+.o_text1, .o_text2 {
+  font-size: 12pt; }
+
+button:hover {
+  cursor: pointer; }
+
 .i_gif_box {
   background: url("../images/skov_placeholder.jpg") no-repeat center;
   background-size: cover;
@@ -276,6 +282,9 @@ footer {
 .p_pris, .p_overnat, .p_mad, .p_trans {
   justify-content: space-between;
   display: flex; }
+
+.p_pris :hover, .p_overnat :hover, .p_mad :hover, .p_trans :hover {
+  cursor: pointer; }
 
 .p_pris_text, .p_overnat_text, .p_mad_text, .p_trans_text {
   display: none;
