@@ -45,7 +45,7 @@ $footer: #253574;
 
 .main_grid {
   display: grid;
-  grid-template-rows: 400px auto auto auto auto 400px;
+  grid-template-rows: 450px auto auto auto auto 400px;
 }
 
 
@@ -268,6 +268,29 @@ nav {
 }
 
 
+.i_cta {
+  display: none;
+  background-color: #ffda49;
+  border-color: #ffda45;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: calibri, sans-serif;
+}
+
+.i_cta_mobil {
+  display: block;
+  height: 45px;
+  margin: 0 auto 15px auto;
+  width: 35%;
+  background-color: #ffda49;
+  border-color: #ffda45;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: calibri, sans-serif;
+}
+
 
 //index slut ---------------------------------------------------
 
@@ -426,11 +449,15 @@ height: 150px;
 //Musik start -------------------------------------------------------------------
 
 .m_tag {
-  margin: 0 15%;
+  margin: 0 20%;
   position: relative;
+  font-size: 15pt;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
+  font-family: calibri, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .m_pic1, .m_pic2, .m_pic3, .m_pic4, .a_pic1, .a_pic2, .a_pic1, .a_pic2 {
@@ -534,6 +561,18 @@ height: 150px;
 
 .art_text1, .art_text2, .art_text3, .art_text4, .art_text5, .art_text6, .art_text7, .art_text8, .art_text9 {
   display: none;
+}
+
+.m_cta {
+  margin-top: 25px;
+  width: 100%;
+  height: 60px;
+  background-color: $primar_blue;
+  border-color: #0468a9;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: calibri, sans-serif;
 }
 
 
@@ -643,6 +682,16 @@ height: 150px;
     display: none;
   }
 
+  .i_cta {
+    display: block;
+    height: 35px;
+    width: 20%;
+    margin: auto;
+  }
+
+  .i_cta_mobil {
+    display: none;
+  }
 
   //index slut -------------------------------------
 
@@ -694,6 +743,7 @@ height: 150px;
   .m_tag {
     margin: 0 20%;
     top: 40%;
+    font-size: 18pt;
   }
 
   .m_text_pic1, .m_text_pic2, .m_text_pic3, .m_text_pic4, .a_text_pic1, .a_text_pic2 {
@@ -731,6 +781,15 @@ height: 150px;
 
   .artist2, .artist4, .artist6, .artist8 {
     grid-column: auto;
+  }
+
+  .m_cta_flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .m_cta {
+    width: 40%;
   }
 
   //musik slut --------------------------------------
