@@ -196,20 +196,47 @@ button:hover {
   cursor: pointer;
 }
 
+#toTop {
+  position: fixed;
+  font-size: 20pt;
+  z-index: 500;
+  bottom: 25px;
+  color: white;
+  right: 25px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+
+.o_pic1 {
+  background: url("../images/cottage.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+
+}
+
+
 // index start -------------------------------------------------
 
 .i_gif_box {
-  background: url("../images/skov_placeholder.jpg") no-repeat center;
+  background: url("../images/loop_2.gif") no-repeat center;
   background-size: cover;
   height: fit-content;
   width: 100%;
   position: relative;
+
 }
 
 .i_gif {
   margin: auto;
-  width: 300px;
+  width: 75%;
   height: 100vh;
+
 }
 
 .i_drop_btn {
@@ -222,7 +249,9 @@ button:hover {
   }
 
   i {
-    color: $primar_yellow;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
   }
 }
 
@@ -684,6 +713,17 @@ height: 150px;
     display: none;
   }
 
+  .o_flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .o_pic1 {
+    width: 225%;
+    height: 300px;
+    margin: auto 20px;
+  }
+
   //index start ---------------------------------
 
   .i_logo {
@@ -704,6 +744,10 @@ height: 150px;
 
   .i_cta_mobil {
     display: none;
+  }
+
+  .i_gif {
+    width: 40%;
   }
 
   //index slut -------------------------------------
