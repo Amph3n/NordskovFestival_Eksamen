@@ -41,6 +41,8 @@
 
 <main class="main_grid">
 
+    <div id="toTop"><span class="fa fa-arrow-up"></span></div>
+
     <header class="o_tagline">
         <nav>
             <div class="nav_space">
@@ -416,6 +418,13 @@
                 );
             }
         });
+
+        $("#toTop").click(function () {
+
+            $("html, body").stop().animate({scrollTop: 0}, 1000);
+        });
+
+
     });
 </script>
 </body>

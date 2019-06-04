@@ -41,6 +41,8 @@
 
 <main class="main_grid">
 
+    <div id="toTop"><span class="fa fa-arrow-up"></span></div>
+
     <header class="o_tagline">
         <nav>
             <div class="nav_space">
@@ -170,7 +172,7 @@
 
                 <div class="artist3">
                     <div class="fade3"></div>
-                    <p class="art_text3">Alexander Oscar</p>
+                    <p class="art_text3">Alexander <br> Oscar</p>
                 </div>
 
                 <div class="artist4">
@@ -200,7 +202,7 @@
 
                 <div class="artist9">
                     <div class="fade9"></div>
-                    <p class="art_text9">Hjalmar Larsen</p>
+                    <p class="art_text9">Hjalmar <br> Larsen</p>
                 </div>
 
             </div>
@@ -383,6 +385,11 @@
             }
         });
 
+
+        $("#toTop").click(function () {
+
+            $("html, body").stop().animate({scrollTop: 0}, 1000);
+        });
 
     });
 </script>

@@ -41,6 +41,8 @@
 
 <main class="main_grid">
 
+    <div id="toTop"><span class="fa fa-arrow-up"></span></div>
+
     <header class="o_tagline">
         <nav>
             <div class="nav_space">
@@ -108,7 +110,9 @@
             </div>
             <div class="a_text_pic1">
                 <div class="a_born_text1">
-                    <p>Vi har selvfølgelig sørget for, at børnene får en masse kreative aktiviteter at se til, i løbet af de 5 dage på Nordstrand Festival. Der vil være mulighed for at dyrke lidt motion i form af forskellige boldspil, der vil være en stor legeplads, mulighed for ansigtsmaling og ballondyr. Vi har forskellige kreative værksteder hvor børnene får lov at udvikle deres kreative sider med fx tegninger, maling og perler. Derudover kan vi byde på en stor mooncarbane, Tivoli og meget mere!</p>
+                    <p>Vi har selvfølgelig sørget for, at børnene får en masse kreative aktiviteter at se til, i løbet af de 5 dage på Nordstrand Festival. Der vil være mulighed for at dyrke lidt motion i form af forskellige boldspil, der vil være en stor legeplads, mulighed for ansigtsmaling og ballondyr.
+                        <br> <br>
+                        Vi har forskellige kreative værksteder hvor børnene får lov at udvikle deres kreative sider med fx tegninger, maling og perler. Derudover kan vi byde på en stor mooncarbane, Tivoli og meget mere!</p>
                 </div>
                 <br>
                 <div class="a_pic1"></div>
@@ -125,6 +129,7 @@
             <div class="a_voksne_head">
                 <h2>Voksne</h2>
             </div>
+
             <div class="a_text_pic2">
                 <div class="a_voksne_text2">
                 <p>Det er selvfølgelig ikke kun børnene vi har tænkt på -så der vil selvfølgelig også være en masse underholdning for de voksne! Her kan vi bl.a. byde på bingo i det store telt, hvor der vil være en masse fede præmier, vi har bl.a. en ugepræmie som er ikke mindre end en bil!<br>
@@ -211,6 +216,11 @@
                 $(".hide_menu").css("display", "none");
                 navOpen = 0;
             }
+        });
+
+        $("#toTop").click(function () {
+
+            $("html, body").stop().animate({scrollTop: 0}, 1000);
         });
 
     });
