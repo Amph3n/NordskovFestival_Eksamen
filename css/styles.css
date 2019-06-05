@@ -362,7 +362,8 @@ footer {
   text-align: center;
   font-family: calibri, sans-serif;
   font-weight: 400;
-  font-style: italic; }
+  font-style: italic;
+  z-index: 2000; }
 
 .m_pic1, .m_pic2, .m_pic3, .m_pic4, .a_pic1, .a_pic2, .a_pic1, .a_pic2 {
   width: 100%;
