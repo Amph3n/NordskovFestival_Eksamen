@@ -220,7 +220,7 @@ button:hover {
 .i_cta {
   display: none;
   background-color: #ffda49;
-  border-color: #ffda45;
+  border-color: #ffce45;
   color: black;
   font-size: 20px;
   font-weight: 700;
@@ -232,7 +232,7 @@ button:hover {
   margin: 0 auto 15px auto;
   width: 35%;
   background-color: #ffda49;
-  border-color: #ffda45;
+  border-color: #ffce45;
   color: black;
   font-size: 20px;
   font-weight: 700;
@@ -288,7 +288,9 @@ footer {
   width: 100px;
   margin-left: 10px;
   background-color: #ffce45;
-  border-width: 0px; }
+  border-width: 0px;
+  font-weight: 700;
+  font-family: Lato, sans-serif; }
 
 .p_margin {
   margin: 10px 30px; }
@@ -345,7 +347,7 @@ footer {
   width: 40%;
   height: 60px;
   background-color: #ffda49;
-  border-color: #ffda45;
+  border-color: #ffce45;
   color: black;
   font-size: 20px;
   font-weight: 700;

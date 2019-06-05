@@ -84,10 +84,10 @@
         <div class="i_gif_box">
 
 
-            <img src="images/logo_neg6.svg" class="i_gif">
+            <img src="images/logo_neg6.svg" class="i_gif" alt="Logo">
 
             <div class="i_center">
-                <img src="images/count_mountain.svg" class="count_svg">
+                <img src="images/count_mountain.svg" class="count_svg" alt="Countdown Grafik">
                 <p id="countdown"></p>
             </div>
         </div>
@@ -133,7 +133,7 @@
 
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("Juni 6, 2019 23:59:59").getTime();
+    var countDownDate = new Date("August 5, 2020 10:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -157,7 +157,7 @@
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
+            document.getElementById("countdown").innerHTML = "Live";
         }
     }, 1000);
 </script>
