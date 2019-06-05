@@ -305,7 +305,7 @@ button:hover {
 .i_cta {
   display: none;
   background-color: #ffda49;
-  border-color: #ffda45;
+  border-color: $primar_yellow;
   color: black;
   font-size: 20px;
   font-weight: 700;
@@ -318,7 +318,7 @@ button:hover {
   margin: 0 auto 15px auto;
   width: 35%;
   background-color: #ffda49;
-  border-color: #ffda45;
+  border-color: $primar_yellow;
   color: black;
   font-size: 20px;
   font-weight: 700;
@@ -391,8 +391,10 @@ footer {
   height: 100%;
   width: 100px;
   margin-left: 10px;
-  background-color: #ffce45;
+  background-color: $primar_yellow;
   border-width: 0px;
+  font-weight: 700;
+  font-family: Lato, sans-serif;
 }
 
 
@@ -479,7 +481,7 @@ height: 150px;
   width: 40%;
   height: 60px;
   background-color: #ffda49;
-  border-color: #ffda45;
+  border-color: $primar_yellow;
   color: black;
   font-size: 20px;
   font-weight: 700;
