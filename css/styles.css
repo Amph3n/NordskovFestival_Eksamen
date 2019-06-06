@@ -31,6 +31,20 @@ img {
   display: grid;
   grid-template-rows: 450px auto auto auto auto 400px; }
 
+.access {
+  display: grid;
+  grid-template-rows: 1fr; }
+
+.access_back {
+  background: url("../images/404.jpg") no-repeat center;
+  height: 100%;
+  background-size: cover; }
+
+.a_tagline {
+  position: relative;
+  grid-row: 1;
+  height: 100vh; }
+
 .o_tagline {
   position: relative;
   grid-row: 1; }
@@ -145,7 +159,8 @@ button:hover {
   color: white;
   right: 25px;
   -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px; }
+  -webkit-text-stroke-width: 1px;
+  display: none; }
   #toTop :hover {
     cursor: pointer; }
 
@@ -363,7 +378,7 @@ footer {
   font-family: calibri, sans-serif;
   font-weight: 400;
   font-style: italic;
-  z-index: 2000; }
+  z-index: 1500; }
 
 .m_pic1, .m_pic2, .m_pic3, .m_pic4, .a_pic1, .a_pic2, .a_pic1, .a_pic2 {
   width: 100%;
@@ -528,6 +543,9 @@ footer {
     width: 225%;
     height: 300px;
     margin: auto 20px; }
+
+  #toTop {
+    display: block; }
 
   .i_logo {
     height: 80px;
