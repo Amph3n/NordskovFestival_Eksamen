@@ -1,0 +1,2 @@
+ErrorDocument 403 /error_pages/noAccess.html
+ErrorDocument 404 /error_pages/notFound.html

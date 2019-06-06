@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/gcc4dpf.css">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Nordstrand Festival</title>
+    <title>Fejlside Nordstrand Festival</title>
 
     <!-- Favicon -->
     <link rel="icon" type="images/png" href="images/tree96x96.png" sizes="96x96" />
@@ -29,77 +29,64 @@
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- OpenGraph -->
-    <meta property="og:title" content="Nordstrand Festival">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.oliversommer.nu">
-    <meta property="og:image" content="https://www.oliversommer.nu/img.jpg">
-    <meta property="og:description" content="Nordstrand festival er en familie festival placeret i Nykøbing Sjælland.">
-    <meta property="og:locale" content="da_DK">
 
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-<main class="i_main_grid">
+<main class="access">
 
-    <header class="o_tagline">
+
+    <header class="a_tagline">
         <nav>
             <div class="nav_space">
                 <div class="hide_menu">
-                    <div class="i_menu_container">
+                    <div class="menu_container">
                         <div class="menu1">
-                            <a href="musik.html"><h3>Musik</h3></a>
+                            <a href="../musik.html"><h3>Musik</h3></a>
                         </div>
                         <div class="menu2">
-                            <a href="aktivitet.html"><h3>Aktiviteter</h3></a>
+                            <a href="../aktivitet.html"><h3>Aktiviteter</h3></a>
                         </div>
 
-                        <button class="i_cta">
-                            Køb Billet
-                        </button>
+                        <a href="../index.html">
+                            <div class="menu_logo"></div>
+                        </a>
 
                         <div class="menu3">
-                            <a href="praktisk.html"><h3>Praktisk Info</h3></a>
+                            <a href="../praktisk.html"><h3>Praktisk Info</h3></a>
                         </div>
                         <div class="menu4">
-                            <a href="om_os.html"><h3>Om Os</h3></a>
+                            <a href="../om_os.html"><h3 >Om Os</h3></a>
                         </div>
 
-                        <button class="i_cta_mobil">
-                            Køb Billet
-                        </button>
 
+                        <button class="i_cta_mobil">Køb Billet</button>
                     </div>
                 </div>
-                    <div class="i_logo">
+                <a href="../index.html">
+                    <div class="logo">
 
                     </div>
+                </a>
 
-                <div class="i_drop_btn">
+                <div class="drop_btn">
                     <i class="fa fa-bars fa-3x"></i>
                 </div>
 
             </div>
         </nav>
 
-        <div class="i_gif_box">
-
-
-            <img src="images/logo_neg6.svg" class="i_gif" alt="Logo">
-
-            <div class="i_center">
-                <img src="images/count_mountain.svg" class="count_svg" alt="Countdown Grafik">
-                <p id="countdown"></p>
-            </div>
+        <div class="access_back">
         </div>
     </header>
+
+
 </main>
 
 
@@ -110,7 +97,7 @@
 
         var navOpen = 0;
 
-        $(".i_drop_btn").click(function () {
+        $(".drop_btn").click(function () {
             if (navOpen == 1) {
                 $(".hide_menu").stop().slideUp(300);
                 navOpen = 0;
@@ -133,42 +120,13 @@
             }
         });
 
+        $("#toTop").click(function () {
 
+            $("html, body").stop().animate({scrollTop: 0}, 600);
+        });
 
 
     });
 </script>
-
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("August 5, 2020 10:00:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in the element with id="countdown"
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "Live";
-        }
-    }, 1000);
-</script>
-
 </body>
 </html>
